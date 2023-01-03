@@ -4,12 +4,12 @@ on:
   
 jobs:
     build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Run a one-line script
-        run: echo Hello, World!
+      runs-on: ubuntu-latest
+      steps:
+        - name: Run a one-line script
+          run: echo Hello, World!
   
-  deploy-dev:
+    deploy-dev:
       runs-on: ubuntu-latest
       environment:
         name: dev
@@ -19,7 +19,7 @@ jobs:
         - name: Run a one-line script
           run: echo Deploy Dev
           
-  deploy-hmg:
+    deploy-hmg:
       runs-on: ubuntu-latest
       environment:
         name: hmg
@@ -30,7 +30,7 @@ jobs:
           run: echo Deploy HMG
           
           
-  deploy-prd:
+    deploy-prd:
       runs-on: ubuntu-latest
       environment:
         name: prd
